@@ -8,7 +8,7 @@ import Aura from '@primevue/themes/aura';
 // import Column from 'primevue/column';
 
 // Import Firebase initialization
-import { firebaseApp } from './firebase/init';  // 从 init.js 导入
+// import { firebaseApp } from './firebase/init';  // 从 init.js 导入
 
 const app = createApp(App);
 app.use(PrimeVue, { theme: { preset: Aura } });

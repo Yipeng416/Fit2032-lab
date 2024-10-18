@@ -16,6 +16,10 @@ module.exports = {
     "prefer-arrow-callback": "error",
     "quotes": ["error", "double", { "allowTemplateLiterals": true }],
   },
+  globals: {
+    process: "readonly", // 显式声明全局变量
+    module: "readonly",  // 显式声明全局变量
+  },
   overrides: [
     {
       files: ["**/*.spec.*"],
@@ -25,8 +29,4 @@ module.exports = {
       rules: {},
     },
   ],
-  globals: {
-    process: "readonly", // 显式声明全局变量
-    module: "readonly",  // 显式声明全局变量
-  },
 };
